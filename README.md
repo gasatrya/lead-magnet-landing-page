@@ -2,8 +2,8 @@
 
 ![Lead Magnet Landing Page Screenshot](./screenshot.webp)
 
-Demo: [https://ebook-lead-magnet.netlify.app/](https://ebook-lead-magnet.netlify.app/)
-Pagespeed: [https://pagespeed.web.dev/analysis/https-ebook-lead-magnet-netlify-app/9xauqvjcms?form_factor=mobile](https://pagespeed.web.dev/analysis/https-ebook-lead-magnet-netlify-app/9xauqvjcms?form_factor=mobile)
+- Demo: [Live Demo](https://ebook-lead-magnet.netlify.app/)
+- Pagespeed: [99 optimization score](https://pagespeed.web.dev/analysis/https-ebook-lead-magnet-netlify-app/9xauqvjcms?form_factor=mobile)
 
 ## Overview
 
