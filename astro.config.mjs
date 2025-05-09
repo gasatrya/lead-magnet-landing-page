@@ -9,6 +9,7 @@ import partytown from '@astrojs/partytown'
 
 // https://astro.build/config
 export default defineConfig({
+  compressHTML: false,
   vite: {
     plugins: [tailwindcss()],
   },
