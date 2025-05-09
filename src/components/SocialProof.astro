@@ -1,0 +1,258 @@
+---
+import { Icon } from 'astro-icon/components'
+import { Image } from 'astro:assets'
+import avatar1 from '@assets/images/avatar-1.jpg'
+import avatar2 from '@assets/images/avatar-2.jpg'
+import avatar3 from '@assets/images/avatar-3.jpg'
+---
+
+<section
+  id="testimonials"
+  class="pt-12 pb-16 bg-muted"
+  aria-labelledby="testimonials-heading"
+>
+  <div class="max-w-7xl mx-auto px-6 sm:px-8 xl:px-0">
+    <div class="max-w-2xl mx-auto text-center mb-12">
+      <h2
+        id="testimonials-heading"
+        class="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight mb-4"
+      >
+        What Our Community Is Saying
+      </h2>
+      <p class="text-lg text-muted-foreground">
+        See how the Authority Blueprint has transformed the businesses of
+        professionals just like you.
+      </p>
+    </div>
+
+    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+      <!-- Testimonial 1 -->
+      <div
+        class="bg-white p-6 md:p-8 rounded-xl shadow-sm border border-border flex flex-col"
+      >
+        <div class="flex items-center gap-1 text-amber-400 mb-4">
+          <Icon
+            name="heroicons:star-solid"
+            class="w-5 h-5"
+            aria-hidden="true"
+          />
+          <Icon
+            name="heroicons:star-solid"
+            class="w-5 h-5"
+            aria-hidden="true"
+          />
+          <Icon
+            name="heroicons:star-solid"
+            class="w-5 h-5"
+            aria-hidden="true"
+          />
+          <Icon
+            name="heroicons:star-solid"
+            class="w-5 h-5"
+            aria-hidden="true"
+          />
+          <Icon
+            name="heroicons:star-solid"
+            class="w-5 h-5"
+            aria-hidden="true"
+          />
+        </div>
+        <blockquote class="flex-1">
+          <p class="text-muted-foreground italic mb-6">
+            "I followed the exact 7 steps laid out in this blueprint and within
+            60 days landed two premium clients at rates I never thought
+            possible. I'm now the go-to consultant in my industry for strategic
+            planning."
+          </p>
+        </blockquote>
+        <div class="flex items-center gap-4">
+          <div class="flex-shrink-0">
+            <Image
+              src={avatar1}
+              alt="Andi Prasetyo profile picture"
+              width={90}
+              height={90}
+              class="rounded-full w-12 h-12 object-cover border border-border"
+              loading="lazy"
+            />
+          </div>
+          <div>
+            <p class="font-medium">Andi Prasetyo</p>
+            <p class="text-sm text-muted-foreground">
+              Business Consultant, Jakarta
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div
+        class="bg-white p-6 md:p-8 rounded-xl shadow-sm border border-border flex flex-col"
+      >
+        <div class="flex items-center gap-1 text-amber-400 mb-4">
+          <Icon
+            name="heroicons:star-solid"
+            class="w-5 h-5"
+            aria-hidden="true"
+          />
+          <Icon
+            name="heroicons:star-solid"
+            class="w-5 h-5"
+            aria-hidden="true"
+          />
+          <Icon
+            name="heroicons:star-solid"
+            class="w-5 h-5"
+            aria-hidden="true"
+          />
+          <Icon
+            name="heroicons:star-solid"
+            class="w-5 h-5"
+            aria-hidden="true"
+          />
+          <Icon
+            name="heroicons:star-solid"
+            class="w-5 h-5"
+            aria-hidden="true"
+          />
+        </div>
+        <blockquote class="flex-1">
+          <p class="text-muted-foreground italic mb-6">
+            "Before finding this blueprint, I was constantly hustling for new
+            clients. Now they come to me! Step 3's content strategy completely
+            changed how I position myself online. Worth 10x what they're
+            charging!"
+          </p>
+        </blockquote>
+        <div class="flex items-center gap-4">
+          <div class="flex-shrink-0">
+            <Image
+              src={avatar2}
+              alt="Sarah Lim profile picture"
+              width={90}
+              height={90}
+              class="rounded-full w-12 h-12 object-cover border border-border"
+              loading="lazy"
+            />
+          </div>
+          <div>
+            <p class="font-medium">Sarah Lim</p>
+            <p class="text-sm text-muted-foreground">
+              Marketing Strategist, Singapore
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div
+        class="bg-white p-6 md:p-8 rounded-xl shadow-sm border border-border flex flex-col"
+      >
+        <div class="flex items-center gap-1 text-amber-400 mb-4">
+          <Icon
+            name="heroicons:star-solid"
+            class="w-5 h-5"
+            aria-hidden="true"
+          />
+          <Icon
+            name="heroicons:star-solid"
+            class="w-5 h-5"
+            aria-hidden="true"
+          />
+          <Icon
+            name="heroicons:star-solid"
+            class="w-5 h-5"
+            aria-hidden="true"
+          />
+          <Icon
+            name="heroicons:star-solid"
+            class="w-5 h-5"
+            aria-hidden="true"
+          />
+          <Icon
+            name="heroicons:star-solid"
+            class="w-5 h-5"
+            aria-hidden="true"
+          />
+        </div>
+        <blockquote class="flex-1">
+          <p class="text-muted-foreground italic mb-6">
+            "The 'Niche Dominator' strategy in Step 1 was a revelation. I went
+            from competing with everyone to owning a specific market segment
+            where I'm now the recognized authority. My revenue has doubled in
+            just 4 months."
+          </p>
+        </blockquote>
+        <div class="flex items-center gap-4">
+          <div class="flex-shrink-0">
+            <Image
+              src={avatar3}
+              alt="Diana Jean profile picture"
+              width={90}
+              height={90}
+              class="rounded-full w-12 h-12 object-cover border border-border"
+              loading="lazy"
+            />
+          </div>
+          <div>
+            <p class="font-medium">Diana Jean</p>
+            <p class="text-sm text-muted-foreground">
+              Financial Advisor, Manila
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Additional Social Proof Elements -->
+    <div class="mt-16 pt-10 border-t border-border">
+      <h3 class="text-center text-lg font-semibold mb-6">
+        Trusted by professionals from companies like:
+      </h3>
+      <div class="flex flex-wrap justify-center items-center gap-8 md:gap-12">
+        <div class="text-muted-foreground/70">
+          <Icon
+            name="simple-icons:microsoft"
+            class="w-24 h-8"
+            aria-label="Microsoft"
+          />
+        </div>
+        <div class="text-muted-foreground/70">
+          <Icon
+            name="simple-icons:google"
+            class="w-20 h-8"
+            aria-label="Google"
+          />
+        </div>
+        <div class="text-muted-foreground/70">
+          <Icon name="simple-icons:adobe" class="w-20 h-8" aria-label="Adobe" />
+        </div>
+        <div class="text-muted-foreground/70">
+          <Icon
+            name="simple-icons:salesforce"
+            class="w-24 h-8"
+            aria-label="Salesforce"
+          />
+        </div>
+        <div class="text-muted-foreground/70">
+          <Icon name="simple-icons:ibm" class="w-16 h-8" aria-label="IBM" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Social Proof CTA -->
+    <div class="mt-16 text-center">
+      <a
+        href="#hero"
+        class="inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary/90 text-white font-semibold text-lg py-4 px-8 rounded shadow-md transition duration-300 ease-in-out focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/30"
+        aria-label="Get your free authority blueprint now"
+      >
+        <span>Get Your FREE Authority Blueprint Now!</span>
+        <Icon name="heroicons:chevron-up" class="size-6 flex-none" />
+      </a>
+      <p class="text-sm text-muted-foreground mt-3">
+        Join thousands of professionals who've transformed their businesses
+      </p>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,53 @@
+---
+import '../styles/global.css'
+import { i18n, metadata } from 'src/site-config'
+import Analytics from '@components/Analytics.astro'
+---
+
+<!doctype html>
+<html lang={i18n.lang} dir={i18n.dir} class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{metadata.title}</title>
+
+    <!-- SEO -->
+    <meta name="description" content={metadata.description} />
+    <link rel="canonical" href={metadata.url} />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content={metadata.themeColor} />
+    <meta name="author" content={metadata.author} />
+
+    <!-- Verification -->
+    {
+      metadata.verification?.google && (
+        <meta
+          name="google-site-verification"
+          content={metadata.verification.google}
+        />
+      )
+    }
+    {
+      metadata.verification?.bing && (
+        <meta name="msvalidate.01" content={metadata.verification.bing} />
+      )
+    }
+
+    <!-- Custom Font -->
+    <link rel="preconnect" href="https://rsms.me/" />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+
+    <Analytics />
+  </head>
+  <body>
+    <a
+      href="#main-content"
+      class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50 focus:px-4 focus:py-2 focus:bg-white focus:text-black focus:outline-2 focus:outline-offset-2 focus:outline-black focus:rounded-md"
+    >
+      Skip to content
+    </a>
+    <slot />
+  </body>
+</html>

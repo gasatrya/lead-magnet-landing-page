@@ -1,0 +1,112 @@
+---
+import { Icon } from 'astro-icon/components'
+import { Image } from 'astro:assets'
+import bgImage from '@assets/images/practice.jpg'
+---
+
+<section
+  id="final-cta"
+  class="py-16 md:py-20 relative isolate overflow-hidden"
+  aria-labelledby="final-cta-heading"
+>
+  <!-- Background Image with Overlay -->
+  <div class="absolute inset-0 z-0">
+    <Image
+      src={bgImage}
+      alt=""
+      class="w-full h-full object-cover"
+      loading="lazy"
+      aria-hidden="true"
+    />
+    <div class="absolute inset-0 bg-primary/95"></div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-6 sm:px-8 xl:px-0 relative z-10">
+    <div class="max-w-3xl mx-auto text-center mb-10">
+      <h2
+        id="final-cta-heading"
+        class="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight mb-4 text-white"
+      >
+        Ready to Become the Go-To Authority in Your Niche?
+      </h2>
+      <p class="text-lg text-white/90">
+        Stop chasing clients and start having them seek <em>you</em> out. Stop competing
+        on price and start commanding premium fees based on your recognized expertise.
+        For a limited time, get the complete 7-step Authority Blueprint FREE and
+        discover:
+      </p>
+    </div>
+
+    <div class="max-w-2xl mx-auto mb-12">
+      <ul class="space-y-4">
+        <li class="flex items-start gap-3">
+          <span class="text-white flex-shrink-0">
+            <Icon
+              name="heroicons:check-circle"
+              class="size-6"
+              aria-hidden="true"
+            />
+          </span>
+          <span class="text-white/90">
+            The exact framework to position yourself as the undeniable expert
+            everyone wants to work with.
+          </span>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="text-white flex-shrink-0">
+            <Icon
+              name="heroicons:check-circle"
+              class="size-6"
+              aria-hidden="true"
+            />
+          </span>
+          <span class="text-white/90">
+            How to attract premium clients who value your expertise (and happily
+            pay for it!).
+          </span>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="text-white flex-shrink-0">
+            <Icon
+              name="heroicons:check-circle"
+              class="size-6"
+              aria-hidden="true"
+            />
+          </span>
+          <span class="text-white/90">
+            Simple, repeatable strategies to build visibility and credibility
+            consistently over time.
+          </span>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="text-white flex-shrink-0">
+            <Icon
+              name="heroicons:check-circle"
+              class="size-6"
+              aria-hidden="true"
+            />
+          </span>
+          <span class="text-white/90">
+            Your step-by-step action plan to finally achieve the authority
+            status you deserve.
+          </span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="text-center">
+      <p class="font-medium mb-6 text-white">
+        Don't wait to be discovered. Build your authority starting today.
+      </p>
+      <a
+        href="#hero"
+        class="inline-flex items-center justify-center gap-2 bg-white hover:bg-white/90 text-primary font-semibold text-lg py-4 px-8 rounded shadow-md transition duration-300 ease-in-out focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white/30"
+        aria-label="Download your free authority blueprint now"
+      >
+        <span>Download Your FREE Authority Blueprint Now!</span>
+        <Icon name="heroicons:chevron-up" class="size-6 flex-none" />
+      </a>
+      <p class="text-sm text-white/80 mt-3">$99 Value — Yours Free</p>
+    </div>
+  </div>
+</section>

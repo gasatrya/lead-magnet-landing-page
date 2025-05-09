@@ -1,0 +1,24 @@
+---
+import { metadata } from '../site-config'
+---
+
+{
+  metadata.analytics.google && (
+    <>
+      <script 
+        is:inline
+        type="text/partytown" 
+        async 
+        src={`https://www.googletagmanager.com/gtag/js?id=${metadata.analytics.google}`}
+      ></script>
+      <script is:inline type="text/partytown" define:vars={{ GA_MEASUREMENT_ID: metadata.analytics.google }}>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', GA_MEASUREMENT_ID);
+      </script>
+    </>
+  )
+}

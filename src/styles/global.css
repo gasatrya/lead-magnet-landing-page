@@ -1,0 +1,74 @@
+@import 'tailwindcss';
+@plugin "@tailwindcss/forms";
+
+@theme {
+  /* Font settings */
+  --font-sans: InterVariable, sans-serif;
+  --font-sans--font-feature-settings: 'liga' 1, 'calt' 1;
+
+  /* Semantic color variables */
+  --color-background: var(--color-white);
+  --color-foreground: var(--color-slate-800);
+  --color-heading: var(--color-slate-900);
+
+  /* Card colors */
+  --color-card: var(--color-white);
+  --color-card-foreground: var(--color-slate-700);
+
+  /* Primary colors */
+  --color-primary: var(--color-blue-600);
+  --color-primary-foreground: var(--color-white);
+
+  /* Secondary colors */
+  --color-secondary: var(--color-slate-900);
+  --color-secondary-foreground: var(--color-white);
+
+  /* Muted colors */
+  --color-muted: var(--color-slate-50);
+  --color-muted-foreground: var(--color-slate-600);
+
+  /* Utility colors */
+  --color-border: var(--color-slate-200);
+  --color-input: var(--color-slate-200);
+  --color-ring: var(--color-blue-600);
+
+  /* Utilities */
+  --radius: var(--radius-lg);
+}
+
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold text-heading tracking-tight;
+  }
+}

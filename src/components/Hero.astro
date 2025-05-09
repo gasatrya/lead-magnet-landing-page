@@ -1,0 +1,226 @@
+---
+import { Icon } from 'astro-icon/components'
+import { Image } from 'astro:assets'
+import mockup from '@assets/images/mockup.png'
+---
+
+<section
+  id="hero"
+  class="relative pt-6 md:pt-12 pb-16 overflow-hidden bg-secondary"
+  aria-labelledby="hero-heading"
+>
+  <div class="max-w-6xl mx-auto px-6 sm:px-8 xl:px-0 relative z-10">
+    <!-- Title & Description -->
+    <div class="max-w-3xl mx-auto text-center mb-10">
+      <h1
+        id="hero-heading"
+        class="text-2xl md:text-4xl lg:text-5xl lg:leading-13 text-white"
+      >
+        Stop Being Invisible: Build Recognized Authority in Your Niche (Faster
+        Than You Think!)
+      </h1>
+      <p class="mt-4 text-base md:text-xl text-white/90">
+        Download our step-by-step blueprint and go from overlooked professional
+        to the sought-after expert clients <em>want</em> to pay premium fees for.
+      </p>
+    </div>
+
+    <!-- 2 Columns: Left (Image + Features), Right (Form) -->
+    <div
+      class="flex flex-col lg:flex-row lg:items-start gap-6 lg:gap-12 relative"
+    >
+      <!-- Left: Image + Features -->
+      <div
+        class="w-full lg:w-1/2 flex flex-col items-center lg:items-end lg:mb-0 gap-12 relative order-2 lg:order-1"
+      >
+        <!-- Top Image -->
+        <div class="max-w-md self-start">
+          <Image
+            src={mockup}
+            alt="The Authority Blueprint Cover"
+            class="rounded-xl shadow-lg w-full h-auto"
+            loading="eager"
+          />
+
+          <!-- Arrow Decoration -->
+          <div
+            class="hidden xl:flex flex-col items-center justify-center px-4 absolute -right-16 top-1/2 -translate-y-1/2"
+          >
+            <svg
+              width="296"
+              height="71"
+              viewBox="0 0 296 71"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="size-24"
+            >
+              <path
+                d="M-3.10351e-06 71C13.102 44.3623 83.0496 8.91537 132.922 2.62301C186.809 -4.29859 217.873 1.57428 281.27 31.1484C280.425 26.9535 279.368 23.5976 278.945 20.4514C278.311 16.8857 277.677 13.1103 277.889 9.54461C277.889 8.49589 279.791 6.60818 281.059 6.39843C282.327 6.18869 284.44 7.6569 284.862 8.70563C288.666 18.7734 292.047 28.8412 295.64 39.1187C296.696 42.4746 295.428 44.9916 291.836 46.0403C278.1 49.3962 264.364 52.9619 250.417 56.1081C247.247 56.7373 243.443 55.8983 239.217 55.8983C242.598 46.8793 250.206 47.928 255.7 45.6208C261.406 43.1039 267.534 41.6357 274.93 39.1187C257.39 27.373 239.639 20.0319 220.832 15.4175C151.941 -1.78164 88.544 12.481 30.0078 50.6547C22.4002 55.6886 15.4265 61.5615 8.03027 66.8051C5.70572 67.8538 3.59247 68.9026 -3.10351e-06 71Z"
+                fill="white"></path>
+            </svg>
+          </div>
+        </div>
+        <!-- Features List -->
+        <ul class="w-full space-y-4">
+          <li class="flex items-start gap-3">
+            <span class="text-white mt-1 flex-shrink-0">
+              <Icon
+                name="heroicons:check-circle"
+                class="w-6 h-6"
+                aria-hidden="true"
+              />
+            </span>
+            <span class="text-base sm:text-lg text-white/90">
+              <strong class="text-white">Attract High-Paying Clients:</strong> Attract
+              High-Paying Clients
+            </span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-white mt-1 flex-shrink-0">
+              <Icon
+                name="heroicons:check-circle"
+                class="w-6 h-6"
+                aria-hidden="true"
+              />
+            </span>
+            <span class="text-base sm:text-lg text-white/90">
+              <strong class="text-white">Gain Effortless Recognition:</strong> Become
+              the trusted, go-to name people seek out in your field.
+            </span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-white mt-1 flex-shrink-0">
+              <Icon
+                name="heroicons:check-circle"
+                class="w-6 h-6"
+                aria-hidden="true"
+              />
+            </span>
+            <span class="text-base sm:text-lg text-white/90">
+              <strong class="text-white">Eliminate Competition:</strong> Make price
+              irrelevant when you're perceived as the leading authority.
+            </span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-white mt-1 flex-shrink-0">
+              <Icon
+                name="heroicons:check-circle"
+                class="w-6 h-6"
+                aria-hidden="true"
+              />
+            </span>
+            <span class="text-base sm:text-lg text-white/90">
+              <strong class="text-white">Get a Clear Roadmap:</strong> Implement
+              proven strategies immediately with our actionable 7-step plan.
+            </span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Right: Download Form -->
+      <div
+        class="w-full lg:w-1/2 flex flex-col items-center lg:items-start lg:pl-16 order-1 lg:order-2"
+      >
+        <form
+          id="download-form"
+          class="w-full bg-white rounded-xl shadow-lg p-8 flex flex-col gap-5"
+          aria-label="Download The Authority Blueprint"
+        >
+          <div>
+            <h2 class="text-xl font-bold tracking-tight mb-2">
+              Get Your FREE Authority Blueprint
+            </h2>
+            <p class="text-sm text-muted-foreground mb-2">
+              Normally $99 Value — Yours Free!
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            <label class="block">
+              <span class="text-sm font-medium">First Name</span>
+              <input
+                type="text"
+                name="firstName"
+                required
+                class="mt-1 block w-full rounded border border-border bg-background py-2 px-3 text-foreground placeholder:text-muted-foreground focus:ring-2 focus:ring-primary focus:outline-none"
+                placeholder="John"
+                autocomplete="given-name"
+              />
+            </label>
+
+            <label class="block">
+              <span class="text-sm font-medium">Last Name</span>
+              <input
+                type="text"
+                name="lastName"
+                required
+                class="mt-1 block w-full rounded border border-border bg-background py-2 px-3 text-foreground placeholder:text-muted-foreground focus:ring-2 focus:ring-primary focus:outline-none"
+                placeholder="Doe"
+                autocomplete="family-name"
+              />
+            </label>
+          </div>
+
+          <label class="block">
+            <span class="text-sm font-medium">Email Address</span>
+            <input
+              type="email"
+              name="email"
+              required
+              class="mt-1 block w-full rounded border border-border bg-background py-2 px-3 text-foreground placeholder:text-muted-foreground focus:ring-2 focus:ring-primary focus:outline-none"
+              placeholder="you@example.com"
+              autocomplete="email"
+            />
+          </label>
+
+          <label class="block">
+            <span class="text-sm font-medium">Your Profession</span>
+            <input
+              type="text"
+              name="profession"
+              required
+              class="mt-1 block w-full rounded border border-border bg-background py-2 px-3 text-foreground placeholder:text-muted-foreground focus:ring-2 focus:ring-primary focus:outline-none"
+              placeholder="Consultant, Coach, Entrepreneur, etc."
+              autocomplete="organization-title"
+            />
+          </label>
+
+          <label class="block">
+            <span class="text-sm font-medium">Your Main Niche/Industry</span>
+            <select
+              name="industry"
+              required
+              class="mt-1 block w-full rounded border border-border bg-background py-2 px-3 text-foreground focus:ring-2 focus:ring-primary focus:outline-none"
+            >
+              <option value="" disabled selected>Select your industry</option>
+              <option value="consulting">Business Consulting</option>
+              <option value="coaching">Personal/Professional Coaching</option>
+              <option value="marketing">Marketing Services</option>
+              <option value="finance">Financial Services</option>
+              <option value="health">Health & Wellness</option>
+              <option value="technology">Technology/SaaS</option>
+              <option value="education">Education/Training</option>
+              <option value="creative">Creative Services</option>
+              <option value="other">Other</option>
+            </select>
+          </label>
+
+          <button
+            type="submit"
+            class="mt-2 inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary/90 text-white font-semibold text-base py-4 px-6 rounded shadow-md transition duration-300 ease-in-out focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/30 cursor-pointer"
+            aria-label="Download The Authority Blueprint"
+          >
+            <span>Send Me the Blueprint</span>
+            <Icon name="heroicons:arrow-down-tray" class="w-5 h-5" />
+          </button>
+
+          <div class="mt-1 text-center">
+            <p class="text-xs text-muted-foreground">
+              No spam. Instant access. Unsubscribe anytime.
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
