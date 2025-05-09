@@ -1,5 +1,7 @@
 # Lead Magnet Landing Page
 
+![Lead Magnet Landing Page Screenshot](./screenshot.webp)
+
 A high-converting lead generation landing page designed to capture email addresses in exchange for a premium ebook. This page implements the Psychology of Progressive Persuasion methodology with a mobile-first, WCAG 2.1 AA compliant design.
 
 **Key Features:**
